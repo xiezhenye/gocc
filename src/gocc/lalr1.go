@@ -1,11 +1,11 @@
 package gocc
 
 type LALR1States struct {
-  states  []*State
+  states  []*LALR1State
   current uint
 }
 
 type LALR1State struct {
-  map  map[Element]uint
+  act  map[Element]uint
 }
 
